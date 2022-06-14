@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css ">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="contenedorTutorial">
+        <div class=" col-lg-8 videos-container" id="videos-container">
+            <div class="video">
+                <div class="vid">
+                    <div class="thumbnail" id="reproductor" ng-show="!vm.selectedVideo.flags.isForm">
+                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/9hH3zEH4U6o"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 playlist-container">
+            <div class="playlist">
+                <div class="playlist-container">
+                    <div class="playlist-header">
+                        <h3>Tutoriales</h3>
+                    </div>
+                </div>
+
+                <div class="playlist-container">
+                    <div class="playlist-body">
+                        <div class="playlist-item" ng-repeat="video in vm.videos" id="videos">
+                            <div class="playlist-item-thumbnail" ng-click="vm.selectVideo(video)">
+                                <img width="80px"
+                                    src="https://yt3.ggpht.com/ytc/AKedOLSHdIh1R1TMjGTs3gof9KC0uS9NPY48DR8_fCmo=s88-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                            </div>
+                            <div class="playlist-item-title">
+                                <h4>Entregas de Cajas </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-container">
+                    <div class="playlist-body">
+                        <div class="playlist-item" ng-repeat="video in vm.videos" id="videos">
+                            <div class="playlist-item-thumbnail" ng-click="vm.selectVideo(video)">
+                                <img width="80px"
+                                    src="https://yt3.ggpht.com/ytc/AKedOLSHdIh1R1TMjGTs3gof9KC0uS9NPY48DR8_fCmo=s88-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                            </div>
+                            <div class="playlist-item-title">
+                                <h4>Entregas de Medallas y Dinero </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-container">
+                    <div class="playlist-body">
+                        <div class="playlist-item" ng-repeat="video in vm.videos" id="videos">
+                            <div class="playlist-item-thumbnail" ng-click="vm.selectVideo(video)">
+                                <img width="80px"
+                                    src="https://yt3.ggpht.com/ytc/AKedOLSHdIh1R1TMjGTs3gof9KC0uS9NPY48DR8_fCmo=s88-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                            </div>
+                            <div class="playlist-item-title">
+                                <h4>Entregas de Pilotos </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script script script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
