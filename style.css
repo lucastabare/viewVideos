@@ -19,12 +19,12 @@ body{
 }
 
 .container .main-video{
-    background: #fff;
+    background: #fbdb6e;
     border-radius: 5px;
     padding: 10px;
 }
 
-.container .main-video video{
+.container .main-video iframe{
     width: 100%; 
     border-radius:5px ;
 }
@@ -37,13 +37,13 @@ body{
 }
 
 .container .video-list{
-    background: #fafafa;
+    background: #fbdb6e;
     border-radius: 5px;
-    height: 520px;
-    overflow-y: scroll;
+    /* height: 520px;
+    overflow-y: scroll; */
 }
 
-.container .video-list::-webkit-scrollbar{
+/* .container .video-list::-webkit-scrollbar{
     width: 7px;
 }
 
@@ -55,10 +55,11 @@ body{
 .container .video-list::-webkit-scrollbar-thumb{
     background: #666;
     border-radius:50px;
-}
+} */
 
-.container .video-list .vid video{
-    width: 100px;
+.container .video-list .vid iframe{
+    width: 80px;
+    height: 80px;
     border-radius: 5px;
 }
 
@@ -78,7 +79,7 @@ body{
 }
 
 .container .video-list .vid.active{
-    background: #2980b9;
+    background: #292966;
 }
 
 .container .video-list .vid.active .tittle{
@@ -86,7 +87,7 @@ body{
 }
 
 .container .video-list .vid .tittle{
-    color: #333;
+    color: #30aed5;
     font-size: 17px;
 }
 
